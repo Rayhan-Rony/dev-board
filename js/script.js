@@ -7,8 +7,10 @@ for (const btn of completeBtn){
 // alert 
         alert("Board Updated Successfully")
         // get and set text for assigned task 
-        const assignTask=getInnerTextById("assigned-task-count")
-        setInnerText("assigned-task-count",`0${assignTask-1}`)
+        const assignTask=getInnerTextById("assigned-task-count")-1
+        setInnerText("assigned-task-count",`0${assignTask}`)
+        // alert after completing all 
+        assignTask === 0?alert("Congrats!!!! You have completed all the current task."):
         // disable the button after click 
         this.disabled=true;
         this.classList.add("bg-gray-300")
@@ -17,7 +19,7 @@ for (const btn of completeBtn){
         setInnerText("completed-task-checkbox-text",`${completedTaskCheckboxText+1}`)
         // accessing title  of this card 
        const title=this.parentNode.parentNode.parentNode.querySelector(".pending-task-title")
-       console.log(title.innerText)
+       
     //    accessing current time 
      const time=getTime()
        
@@ -27,7 +29,7 @@ for (const btn of completeBtn){
        p.classList.add("my-8","bg-[#f4f7ff]","mx-5","p-3","rounded-lg")
        document.getElementById("task-history").appendChild(p)
        
-      
+    
 
         
         
