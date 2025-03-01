@@ -4,6 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dev-Board</title>
+    <!-- google fonts  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind cdn  -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+      .poppins {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
   </head>
-  <body></body>
+  <body class="w-11/12 mx-auto poppins bg-[#f4f7ff]">
+    <header>
+      <nav class="flex justify-between bg-white p-6 rounded-xl mt-6">
+        <!-- logo part  -->
+        <div class="flex items-center gap-4">
+          <div>
+            <img src="./assets/logo.png" alt="" />
+          </div>
+          <h2 class="text-4xl">
+            Dev<span class="text-[#00303c] font-extrabold">Board</span>
+          </h2>
+        </div>
+        <!-- theme and checkbox part  -->
+        <div class="flex items-center gap-11">
+          <div class="flex gap-2 bg-[#f4f7ff] p-2 rounded-full items-center">
+            <div>
+              <img src="./assets/checkbox.png" alt="" />
+            </div>
+            <h4 class="text-[#1e1e1e] text-3xl font-bold">23</h4>
+          </div>
+          <div class="bg-[#f4f7ff] p-2 rounded-full">
+            <img src="./assets/theme-btn.png" alt="" />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-60">
+      <h1>This is main</h1>
+    </main>
+    <footer class="mt-60">
+      <h1>This is main</h1>
+    </footer>
+  </body>
 </html>
