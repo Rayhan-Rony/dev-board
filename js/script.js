@@ -17,6 +17,7 @@ for (const btn of completeBtn){
         setInnerText("completed-task-checkbox-text",`${completedTaskCheckboxText+1}`)
         // accessing title  of this card 
        const title=this.parentNode.parentNode.parentNode.querySelector(".pending-task-title")
+       console.log(title.innerText)
     //    accessing current time 
      const time=getTime()
        
@@ -32,3 +33,8 @@ for (const btn of completeBtn){
         
     })
 }
+
+// clearing the history 
+document.getElementById("btn-clear-history").addEventListener("click",function(){
+    document.getElementById("task-history").innerHTML=" "
+})
