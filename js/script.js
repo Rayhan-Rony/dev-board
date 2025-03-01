@@ -50,3 +50,11 @@ document.getElementById("background-change-icon").addEventListener("click",funct
     document.body.style.backgroundColor=`rgba(${rgba})`
     
 })
+// adding current day 
+const now= new Date().toDateString()
+const dateArray=now.split(" ")
+
+setInnerText("today",`${dateArray[0]} ,`)
+setInnerText("today-date",`${dateArray[1]} ${dateArray[2]} ${dateArray[3]}`)
+
+
