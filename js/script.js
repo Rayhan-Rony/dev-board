@@ -38,3 +38,15 @@ for (const btn of completeBtn){
 document.getElementById("btn-clear-history").addEventListener("click",function(){
     document.getElementById("task-history").innerHTML=" "
 })
+
+// changing random backgroundColor 
+document.getElementById("background-change-icon").addEventListener("click",function(){
+    
+    const r=Math.floor(Math.random()*256)
+    const g=Math.floor(Math.random()*256)
+    const b=Math.floor(Math.random()*256)
+    const a='0.1'
+    const rgba=`${r},${g},${b},${a}`
+    document.body.style.backgroundColor=`rgba(${rgba})`
+    
+})
