@@ -18,6 +18,14 @@
       .poppins {
         font-family: "Poppins", sans-serif;
       }
+      .linear {
+        background: linear-gradient(
+          130.7deg,
+          rgb(55, 82, 253) 0.419%,
+          rgb(108, 127, 250) 52.66%,
+          rgb(155, 168, 248) 99.733%
+        );
+      }
     </style>
   </head>
   <body class="w-11/12 mx-auto poppins bg-[#f4f7ff]">
@@ -46,8 +54,45 @@
         </div>
       </nav>
     </header>
-    <main class="mt-60">
-      <h1>This is main</h1>
+    <main>
+      <section class="mt-5 grid grid-cols-5 gap-4">
+        <!-- top card container / -->
+        <div class="flex gap-6 bg-white p-6 rounded-xl col-span-4">
+          <!-- card 1  -->
+          <div class="flex gap-5 bg-[#f4f7ff] p-8 rounded-xl items-center">
+            <div class="p-4 rounded-full bg-white">
+              <img src="./assets/checkbox.png" alt="" />
+            </div>
+            <div>
+              <p>Task Assigned</p>
+              <p class="text-3xl font-bold">05</p>
+            </div>
+          </div>
+          <!-- card 2  -->
+          <div
+            class="flex linear py-6 ps-10 gap-5 items-center rounded-xl flex-grow"
+          >
+            <div>
+              <img src="./assets/board.png" alt="" />
+            </div>
+            <h2 class="font-medium text-2xl text-white">
+              Discover Something <br />
+              New Today!
+            </h2>
+          </div>
+          <!-- card 3  -->
+          <div class="flex gap-5 bg-[#f4f7ff] p-8 rounded-xl items-center">
+            <div class="p-4 rounded-full bg-white">
+              <img src="./assets/calender.png" alt="" />
+            </div>
+            <div>
+              <p class="text-xl">Wed ,</p>
+              <p class="text-xl font-bold">Jul 28 2025</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white">this is aside</div>
+      </section>
     </main>
     <footer class="mt-60">
       <h1>This is main</h1>
