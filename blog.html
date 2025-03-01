@@ -18,14 +18,6 @@
       .poppins {
         font-family: "Poppins", sans-serif;
       }
-      .linear {
-        background: linear-gradient(
-          130.7deg,
-          rgb(55, 82, 253) 0.419%,
-          rgb(108, 127, 250) 52.66%,
-          rgb(155, 168, 248) 99.733%
-        );
-      }
     </style>
   </head>
   <body class="w-11/12 mx-auto poppins bg-[#f4f7ff]">
@@ -52,5 +44,132 @@
         </div>
       </nav>
     </header>
+    <main class="mb-6">
+      <h1 class="text-center text-2xl font-bold my-4">Blogs</h1>
+      <!-- questions section  -->
+      <section>
+        <div class="bg-white p-4 rounded-lg leading-10 mt-4">
+          <h2
+            class="text-xl font-bold border-[#3752fd33] border-dashed border-b pb-4"
+          >
+            Question-1: What are the different ways to select an element in the
+            DOM?
+          </h2>
+          <p class="mt-4">
+            There are various ways to select an element in the DOM. Such as:
+            <br />
+            <code>
+              getElementsByTagName("tagName");
+              <mark> select all the elements of mentioned tag name. </mark>
+              <br />
+              getElementById("id")
+              <mark>select a element with specific id.</mark> <br />
+              getElementsByClassName("className")<mark
+                >select all the element which had mentioned className.</mark
+              >
+              <br />
+              querySelector(".class/#id/tagName");
+              <mark>Select the first element which had mentioned value.</mark>
+              <br />
+              querySelectorAll(".class/#id/tagName");<mark
+                >Select all the elements which had mentioned value.
+              </mark>
+            </code>
+          </p>
+        </div>
+        <div class="bg-white p-4 rounded-lg leading-10 mt-4">
+          <h2
+            class="text-xl font-bold border-[#3752fd33] border-dashed border-b pb-4"
+          >
+            Question-2: What is the difference between innerHTML, innerText, and
+            textContent ?
+          </h2>
+          <p class="mt-4">
+            Both three are useful for accessing or modifying the DOM element.
+            But there some key differences between them. Such as: <br />
+            <code>
+              element.innerHTML
+              <mark
+                >Through this we can access or modify all the HTML code or text
+                or comment as well as within it.
+              </mark>
+              <br />
+              element.innerText
+              <mark
+                >Through this we can access or modify the visible innerText of
+                that element</mark
+              >
+              <br />
+              element.textContent
+              <mark
+                >Through this we can access or modify the visible and invisible
+                (like comments) innerText of that element</mark
+              >
+            </code>
+          </p>
+        </div>
+        <div class="bg-white p-4 rounded-lg leading-10 mt-4">
+          <h2
+            class="text-xl font-bold border-[#3752fd33] border-dashed border-b pb-4"
+          >
+            Question-3: What is event delegation in the DOM?
+          </h2>
+          <p class="mt-4">
+            Event delegation is a process to handle event in JavaScript.
+            Actually when we add a event listener in a parent element instead of
+            child element called event delegation. And we get several benefit
+            from this process like when adding dynamic child element or load
+            from api it works perfectly. And also help us to avoid code
+            redundancy.
+          </p>
+        </div>
+        <div class="bg-white p-4 rounded-lg leading-10 mt-4">
+          <h2
+            class="text-xl font-bold border-[#3752fd33] border-dashed border-b pb-4"
+          >
+            Question-4: What is event bubbling in the DOM?
+          </h2>
+          <p class="mt-4">
+            Event bubbling is a concept in js DOM. it occurs when we clicked in
+            an event it's triggered towards parent until find root element and
+            it's called event bubbling. It's a JavaScript default behavior.
+          </p>
+        </div>
+        <div class="bg-white p-4 rounded-lg leading-10 mt-4">
+          <h2
+            class="text-xl font-bold border-[#3752fd33] border-dashed border-b pb-4"
+          >
+            Question-5: How do you create, add, and remove elements using
+            JavaScript?
+          </h2>
+          <p class="mt-4">
+            Creating Element: <br />
+            <code> document.createElement="tagName" </code> <br />
+            Adding Element: <br />
+            <code>element.appendChild(newDiv)</code> <br />
+            <code
+              >element.append(newDiv,newP,"added string")
+              <mark>Allow to append several elements or strings at once.</mark>
+            </code>
+            <br />
+            Removing Element: <br />
+            <code>
+              parentElementName.removeChild(childName)
+              <mark
+                >it allows to remove child element from parent element.</mark
+              ></code
+            >
+            <br />
+            <code
+              >elementName.remove()
+              <mark
+                >It allows to delete the mentioned element from DOM
+                directly.</mark
+              ></code
+            >
+          </p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

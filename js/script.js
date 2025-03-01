@@ -1,6 +1,10 @@
 const completeBtn=document.querySelectorAll(".btn-completed-task")
 
-
+document.getElementById()
+document.getElementsByClassName()
+document.getElementsByTagName();
+document.querySelector();
+document.querySelectorAll();
 for (const btn of completeBtn){
    
     btn.addEventListener("click",function(){
