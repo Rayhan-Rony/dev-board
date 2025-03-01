@@ -9,6 +9,8 @@ for (const btn of completeBtn){
         setInnerText("assigned-task-count",`0${assignTask-1}`)
         this.disabled=true;
         this.classList.add("bg-gray-300")
+        const completedTaskCheckboxText=getInnerTextById("completed-task-checkbox-text")
+        setInnerText("completed-task-checkbox-text",`${completedTaskCheckboxText+1}`)
         
         
     })
