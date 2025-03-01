@@ -1,10 +1,6 @@
 const completeBtn=document.querySelectorAll(".btn-completed-task")
 
-document.getElementById()
-document.getElementsByClassName()
-document.getElementsByTagName();
-document.querySelector();
-document.querySelectorAll();
+
 for (const btn of completeBtn){
    
     btn.addEventListener("click",function(){
@@ -31,11 +27,7 @@ for (const btn of completeBtn){
        const p= document.createElement("p")
        p.innerText=`You have Complete The Task ${title.innerText} at ${time}`
        p.classList.add("my-8","bg-[#f4f7ff]","mx-5","p-3","rounded-lg")
-       document.getElementById("task-history").appendChild(p)
-       
-    
-
-        
+       document.getElementById("task-history").appendChild(p)   
         
     })
 }
