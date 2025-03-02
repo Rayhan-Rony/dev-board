@@ -28,26 +28,36 @@
       }
     </style>
   </head>
-  <body class="w-11/12 mx-auto poppins bg-[#f4f7ff]">
+  <body class="lg:w-11/12 mx-auto poppins bg-[#f4f7ff]">
     <header>
-      <nav class="flex justify-between bg-white p-6 rounded-xl mt-6">
+      <nav
+        class="flex justify-between bg-white lg:p-6 p-2 rounded-xl lg:mt-6 mt-2"
+      >
         <!-- logo part  -->
-        <div class="flex items-center gap-4">
+        <div class="flex items-center lg:gap-4 gap-2">
           <div>
-            <img src="./assets/logo.png" alt="" />
+            <img
+              class="w-3/4 lg:w-full mx-auto"
+              src="./assets/logo.png"
+              alt=""
+            />
           </div>
-          <h2 class="text-4xl">
+          <h2 class="lg:text-4xl text-xl">
             Dev<span class="text-[#00303c] font-extrabold">Board</span>
           </h2>
         </div>
         <!-- theme and checkbox part  -->
-        <div class="flex items-center gap-11">
+        <div class="flex items-center lg:gap-11 gap-2">
           <div class="flex gap-2 bg-[#f4f7ff] p-2 rounded-full items-center">
             <div>
-              <img src="./assets/checkbox.png" alt="" />
+              <img
+                class="w-3/4 lg:w-full mx-auto"
+                src="./assets/checkbox.png"
+                alt=""
+              />
             </div>
             <h4
-              class="text-[#1e1e1e] text-3xl font-bold"
+              class="text-[#1e1e1e] lg:text-3xl text-xl font-bold"
               id="completed-task-checkbox-text"
             >
               23
@@ -55,6 +65,7 @@
           </div>
           <div class="bg-[#f4f7ff] p-2 rounded-full">
             <img
+              class="w-3/4 lg:w-full mx-auto"
               id="background-change-icon"
               src="./assets/theme-btn.png"
               alt=""
@@ -64,15 +75,17 @@
       </nav>
     </header>
     <main>
-      <section class="mt-5 grid grid-cols-5 gap-4">
+      <section class="mt-5 grid lg:grid-cols-5 grid-cols-1 gap-4">
         <!-- left grid container for all cards  -->
-        <section class="col-span-4 bg-white p-6 rounded-xl">
+        <section class="lg:col-span-4 bg-white p-6 rounded-xl">
           <!-- top card container / -->
           <div
-            class="flex gap-6 pb-8 border-[#3752fd33] border-dashed border-b"
+            class="flex gap-6 pb-8 lg:flex-row flex-col border-[#3752fd33] border-dashed border-b"
           >
             <!-- card 1  -->
-            <div class="flex gap-5 bg-[#f4f7ff] p-8 rounded-xl items-center">
+            <div
+              class="flex gap-5 bg-[#f4f7ff] p-8 rounded-xl items-center lg:order-first order-1"
+            >
               <div class="p-4 rounded-full bg-white">
                 <img src="./assets/checkbox.png" alt="" />
               </div>
@@ -95,7 +108,9 @@
               </h2>
             </div>
             <!-- card 3  -->
-            <div class="flex gap-5 bg-[#f4f7ff] p-8 rounded-xl items-center">
+            <div
+              class="flex gap-5 bg-[#f4f7ff] p-8 rounded-xl items-center lg:-order-last order-2"
+            >
               <div class="p-4 rounded-full bg-white">
                 <img src="./assets/calender.png" alt="" />
               </div>
@@ -106,7 +121,7 @@
             </div>
           </div>
           <!-- pending task section  -->
-          <div class="grid grid-cols-3 pt-8 gap-9">
+          <div class="grid lg:grid-cols-3 grid-cols-1 pt-8 gap-9">
             <!-- card 1  -->
             <div class="bg-[#f4f7ff] p-6 rounded-xl space-y-4">
               <button class="py-2 px-4 bg-white rounded-xl text-[#00303C]">
